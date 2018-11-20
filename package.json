@@ -1,0 +1,12 @@
+{
+  "name": "cmb2-fontawesome-icon-picker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:diegomagikal/cmb2-fontawesome-icon-picker.git",
+  "author": "Diego Luiz <diego@magikal.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "fontawesome-iconpicker": "farbelous/fontawesome-iconpicker"
+  }
+}
