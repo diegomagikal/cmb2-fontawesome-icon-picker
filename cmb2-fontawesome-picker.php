@@ -22,7 +22,7 @@ class KS_FontAwesome_IconPicker {
     /**
      * Initialize the plugin by hooking into CMB2
      */
-    public function __construct() {
+    public function init() {
         add_action( 'cmb2_render_fontawesome_icon', array( $this, 'render' ), 10, 5 );
         add_action( 'cmb2_sanitize_fontawesome_icon', array( $this, 'sanitize' ), 10, 2 );
     }
@@ -111,4 +111,5 @@ class KS_FontAwesome_IconPicker {
         wp_enqueue_style( 'cmb2-fontawesome-css-all', $url . 'node_modules/@fortawesome/fontawesome-free/css/all.min.css', array(), self::VERSION );
     }
 }
-new KS_FontAwesome_IconPicker();
+
+(new KS_FontAwesome_IconPicker())->init();
